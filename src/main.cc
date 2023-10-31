@@ -1,7 +1,7 @@
 #include "core/robot.hh"
 #include <frc/RobotBase.h>
 
-int
-main() {
+auto
+main() -> int {
     return frc::StartRobot<xfrc::robot>();
 }
