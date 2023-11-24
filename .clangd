@@ -1,4 +1,4 @@
 CompileFlags:
-    Add: ["-std=c++17", "-stdlib=libc++", "-pedantic", "-Weverything", "-Wno-c++98-compat"]
-    CompilationDatabase: "build/compile_commands/linuxathena"
+    Add: ["-pedantic", "-Weverything", "-Wno-c++98-compat"]
+    CompilationDatabase: "build/compile_commands/linuxx86-64"
 

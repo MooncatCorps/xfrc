@@ -148,7 +148,7 @@ IncludeIsMainSourceRegex: ''
 IndentAccessModifiers: false
 IndentCaseBlocks:      false
 IndentCaseLabels:      false
-IndentExternBlock:     Indent
+IndentExternBlock:     NoIndent
 IndentGotoLabels:      false
 IndentPPDirectives:    AfterHash
 IndentRequiresClause:  false
@@ -218,7 +218,7 @@ SortIncludes:    CaseSensitive
 SortUsingDeclarations: LexicographicNumeric
 
 SpaceAfterCStyleCast:            true
-SpaceAfterLogicalNot:            false
+SpaceAfterLogicalNot:            true
 SpaceAfterTemplateKeyword:       true
 SpaceAroundPointerQualifiers:    Default
 SpaceBeforeAssignmentOperators:  true
@@ -238,12 +238,12 @@ SpaceBeforeParensOptions:
   AfterRequiresInExpression:    true
   BeforeNonEmptyParentheses:    false
 SpaceBeforeRangeBasedForLoopColon: true
-SpaceBeforeSquareBrackets:         false
+SpaceBeforeSquareBrackets:         true
 SpaceInEmptyBlock:                 true
 SpaceInEmptyParentheses:           false
 SpacesBeforeTrailingComments:      1
 SpacesInAngles:                    Never
-SpacesInConditionalStatement:      true
+SpacesInConditionalStatement:      false
 SpacesInContainerLiterals:         true
 SpacesInCStyleCastParentheses:     false
 SpacesInLineCommentPrefix:
@@ -272,3 +272,4 @@ WhitespaceSensitiveMacros:
   - STRINGIZE
 
 ...
+
