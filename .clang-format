@@ -89,7 +89,7 @@ BraceWrapping:
   SplitEmptyRecord: true
   SplitEmptyNamespace: true
 
-BreakAfterAttributes:           Always
+BreakAfterAttributes:           Never
 BreakArrays:                    true
 BreakBeforeBinaryOperators:     NonAssignment
 BreakBeforeBraces:              Attach
