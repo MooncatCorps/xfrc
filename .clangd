@@ -1,4 +1,4 @@
 CompileFlags:
-    Add: ["-std=c++2b", "-pedantic", "-Weverything", "-Wno-c++98-compat"]
+    Add: ["-std=c++2b", "-pedantic", "-Weverything", "-Wno-c++98-compat", "-ferror-limit=0"]
     CompilationDatabase: "build/compile_commands/linuxx86-64"
 
