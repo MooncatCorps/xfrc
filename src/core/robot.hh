@@ -1,6 +1,7 @@
 #ifndef XFRC_CORE_ROBOT_HH
 #define XFRC_CORE_ROBOT_HH
 
+#include "robot_container.hh"
 #include <frc/TimedRobot.h>
 
 namespace xfrc {
@@ -43,6 +44,7 @@ public:
     SimulationPeriodic() -> void override;
 
 private:
+    robot_container _container;
 };
 
 } // namespace xfrc
