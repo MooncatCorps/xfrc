@@ -1,5 +1,4 @@
-#ifndef XFRC_CORE_ROBOT_HH
-#define XFRC_CORE_ROBOT_HH
+#pragma once
 
 #include "robot_container.hh"
 #include <frc/TimedRobot.h>
@@ -48,5 +47,3 @@ private:
 };
 
 } // namespace xfrc
-
-#endif
