@@ -1,0 +1,62 @@
+#include <chrono>
+#include <format>
+#include <iostream>
+#include <utility>
+
+namespace xfrc {
+
+template <class... args>
+auto
+log_info(std::string const &message, args &&...arguments) -> void {
+    std::cout << std::format(
+        "[INFO] ({%T}) {}\n",
+        std::chrono::system_clock::now(),
+        std::format(message, std::forward<decltype(arguments)>(arguments)...));
+}
+
+template <class... args>
+auto
+log_success(std::string const &message, args &&...arguments) -> void {
+    std::cout << std::format(
+        "[SUCCESS] ({%T}) {}\n",
+        std::chrono::system_clock::now(),
+        std::format(message, std::forward<decltype(arguments)>(arguments)...));
+}
+
+template <class... args>
+auto
+log_failure(std::string const &message, args &&...arguments) -> void {
+    std::cout << std::format(
+        "[FAILURE] ({%T}) {}\n",
+        std::chrono::system_clock::now(),
+        std::format(message, std::forward<decltype(arguments)>(arguments)...));
+}
+
+template <class... args>
+auto
+log_error(std::string const &message, args &&...arguments) -> void {
+    std::cout << std::format(
+        "[ERROR] ({%T}) {}\n",
+        std::chrono::system_clock::now(),
+        std::format(message, std::forward<decltype(arguments)>(arguments)...));
+}
+
+template <class... args>
+auto
+log_warning(std::string const &message, args &&...arguments) -> void {
+    std::cout << std::format(
+        "[WARNING] ({%T}) {}\n",
+        std::chrono::system_clock::now(),
+        std::format(message, std::forward<decltype(arguments)>(arguments)...));
+}
+
+template <class... args>
+auto
+log_debug(std::string const &message, args &&...arguments) -> void {
+    std::cout << std::format(
+        "[DEBUG] ({%T}) {}\n",
+        std::chrono::system_clock::now(),
+        std::format(message, std::forward<decltype(arguments)>(arguments)...));
+}
+
+} // namespace xfrc
